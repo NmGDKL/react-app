@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 `;
-export const FormBox = styled.div`
+export const FormBox = styled.form`
   width: 350px;
   height: 350px;
   border: 1px solid white;
@@ -32,9 +32,29 @@ export const Image = styled.img`
   display: block;
 `;
 
+export const PasswordBox = styled.div`
+    position:relative;
+    width: 350px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  span {
+    position:absolute;
+    top:48px;
+    right:90px;
+    color:gray;
+    font-size:1.2rem;
+  }
+
+  `;
+
+
 export const TextInput = styled.input`
     margin-bottom: 0.5rem;
     padding: 0.5rem 0.5rem;
+    width: 90%;
     background-color: #04313d;
     border-radius: 3px;
     color: white;
