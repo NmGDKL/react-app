@@ -22,7 +22,7 @@ const Login = () => {
     } else {
       Swal.fire({
         icon: 'error',
-        title: 'Oops...',
+        title: 'Username or password is incorrect!',
         text: 'Username: naim, Password: 1258',
       })
     }
