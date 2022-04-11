@@ -9,7 +9,7 @@ const Navbar = () => {
          <UnorderList>
               <NavLink style={{textDecoration:'none'}} to="/react-app/about"><ElementList>About</ElementList></NavLink> 
               <a href="https://github.com/NmGDKL" style={{textDecoration:'none'}} target="_blank" ><ElementList>Github</ElementList></a>
-              <NavLink style={{textDecoration:'none'}} to="/react-app/login"><ElementList>Logout</ElementList></NavLink>
+              <NavLink style={{textDecoration:'none'}} to="/react-app/"><ElementList>Logout</ElementList></NavLink>
         </UnorderList> 
         </Head>
     </div>
