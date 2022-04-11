@@ -9,7 +9,7 @@ const AppRouter = () => {
     const location = useLocation();
   return (
     <div>
-      {location.pathname === 'react-app/login' || location.pathname === '/' ? null: <Navbar/>}
+      {location.pathname === '/react-app/login' || location.pathname === '/react-app/' ? null: <Navbar/>}
         <div>
           <Routes>
           <Route path="react-app/" exact element={<Login />}/>

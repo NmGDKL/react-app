@@ -9,7 +9,7 @@ const RecipeCard = ({recipes}) => {
                 <Wrapper key={index}>
                     <HeadText>{recipe.recipe.label}</HeadText>
                     <Image src={recipe.recipe.image}/>
-                    <Link to={`/details/${recipe.recipe.uri.slice(recipe.recipe.uri.indexOf("_")+1)}`}><Button>View More</Button></Link> 
+                    <Link to={`/react-app/details/${recipe.recipe.uri.slice(recipe.recipe.uri.indexOf("_")+1)}`}><Button>View More</Button></Link> 
                 </Wrapper>
         ))}
         </Container>

@@ -7,7 +7,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('react-app/home')
+    navigate('/react-app/home')
   }
   return (
     <div>

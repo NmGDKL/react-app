@@ -30,13 +30,13 @@ const Details = () => {
         <div>
         <Container>
             <HeadText>{recipeDetail?.recipe?.label}</HeadText>
-            {recipeDetail?.recipe?.dietLabels.length == 0 ? <Image src={mealSvg}/> : <Image src={dietSvg}/>}
+            {recipeDetail?.recipe?.dietLabels.length === 0 ? <Image src={mealSvg}/> : <Image src={dietSvg}/>}
         </Container>
         <Wrapper>
             
             <div>
                 <Ingredients>Ingredients</Ingredients>
-            {recipeDetail?.recipe?.ingredientLines.map((element=> ( <p> * {element} </p> )))}
+            {recipeDetail?.recipe?.ingredientLines.map(((element,index)=> ( <p key={index}> * {element} </p> )))}
             </div>
         <ImageRecipe src={recipeDetail?.recipe?.image}/>
         </Wrapper>
