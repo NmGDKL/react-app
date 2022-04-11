@@ -27,7 +27,7 @@ const Home = () => {
     <div style={{ backgroundColor: "rgb(66, 167, 191)" }}>
       <Header/>
       <Form result={result}/>
-      {recipes.length != 0 ? <RecipeCard recipes={recipes} /> : <ImageHome src={ImageHomeSvg} />}
+      {recipes.length !== 0 ? <RecipeCard recipes={recipes} /> : <ImageHome src={ImageHomeSvg} />}
       
       
     </div>
