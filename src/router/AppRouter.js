@@ -9,15 +9,15 @@ const AppRouter = () => {
     const location = useLocation();
   return (
     <div>
-      {location.pathname === '/login' || location.pathname === '/' ? null: <Navbar/>}
+      {location.pathname === 'react-app/login' || location.pathname === '/' ? null: <Navbar/>}
         <div>
           <Routes>
-          <Route path="/" exact element={<Login />}/>
-            <Route path="/home" element={<Home />} />
-            <Route path="/details" element={<Details />} />
-            <Route path="/about" element={<About/>} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/details/:recipeLabel" element={<Details />} />
+          <Route path="react-app/" exact element={<Login />}/>
+            <Route path="react-app/home" element={<Home />} />
+            <Route path="react-app/details" element={<Details />} />
+            <Route path="react-app/about" element={<About/>} />
+            <Route path="react-app/login" element={<Login />} />
+            <Route path="react-app/details/:recipeLabel" element={<Details />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
