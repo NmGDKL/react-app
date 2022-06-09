@@ -1,1 +1,1 @@
-<a href="https://movie-app-nmgdkl.herokuapp.com/">CLICK HERE </a>
+<a href="https://nmgdkl.github.io/react-app/">CLICK HERE </a>
